@@ -1,0 +1,34 @@
+Segue credenciais de acesso ao servidor atb-lpa-ginsum1
+
+IP:          10.176.1.223     <ssh porta 22>
+
+USER:    root
+
+PASS:    !@#ginsum!@#QWER
+
+==============================
+
+Senha root Mysql :
+
+qyl-#I%K;7oX
+
+
+
+CREATE USER 'apsinsum'@'%' INDENTIFIED BY 'Apinsum0@'
+
+
+USERS celula
+----------------------------
+
+Mikhaell Silas Pereira dos Reis - Facimp - DB1009403 OK
+MARCOS BRASIL FIDELES - Fanor - DB1028780 OK
+Herisson Henrique de Castro Padua - Facid - DB1009002 OK
+Elizonildo Silva Cassiano - Fanor - DB1000601 OK
+Leonardo Amancio Mota - Fanor - DB1004391 OK	
+Philippe Rodrigues Oliveira - IbmecBH - DB1008498
+
+
+
+INSERT INTO tb_estoque_insumos(id_instituicao, id_marca_imp, id_modelo_imp, id_tipo_insumo, qtd_novos, qtd_usados) 
+            VALUES((SELECT i.id FROM tb_usuario u JOIN tb_instituicao i ON u.campus=i.id WHERE u.id=14), 3,4,2, 0 , 0);
+
